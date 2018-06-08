@@ -19,6 +19,27 @@
 @import url("https://fonts.googleapis.com/css?family=Sansita");
 
 /* 1. Mobile First Rules */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sansita, Eurostyle, sans-serif;
+}
 
 /* 2. General Rules that apply to all devices  */
 
