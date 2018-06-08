@@ -4,11 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Site</title>
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <link rel="stylesheet" href="/CSS/screen.css" type="text/css" media="screen">
     <meta name="description" content="Weather site main page.">
     <meta name="keywords" content="weather, sun, temperature, rain, weather site, cloudy, cold">
     <meta name="viewport" content="width=device-width">
+    <style>
+        @media only screen and (max-width: 1200px) {}
+
+        @media only screen and (max-width: 600px) {}
+
+        body {
+            background-color: #cc33ff;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: yellowgreen;
+        }
+
+        h3 {
+            color: blue;
+
+        }
+
+        #purpose {
+            color: red;
+        }
+
+        #audience {
+            color: orange;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,13 +46,13 @@
 
     <main>
         <section>
-            <h2>Purpose</h2>
+            <h2 id="purpose">Purpose</h2>
             <p>The purpose of The Weather Site is to give current weather conditions in 3 different ways. The initial page will
                 give the weather for the current location based on the Geocoding location information from the device. The
                 second is weather for 3 specific locations accessible through a dedicated link, and the third is weather
                 for any location determined by a search string.</p>
             <section>
-                <h2>Audience</h2>
+                <h2 id="audience">Audience</h2>
                 <p>Primary audience is adults ages 18-30. Most will be students. Access to the site will be split between mobile
                     devices and laptops. A secondary audience will be anyone interested in weather.</p>
                 <h3>Audience Goals</h3>

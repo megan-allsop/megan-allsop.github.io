@@ -1,0 +1,37 @@
+/* CSS for Screened Devices 
+
+*  Stylesheet for Screened Devices
+*  Created by: Meg Allsop
+*  
+*  1.  Includes (fonts and supplementary stylesheets)
+*     1 Normalize
+*     2 Google fonts
+*
+*  2.  General Styles (for all pages and devices)
+*
+*  3.  Mobile First (styles specific to small screens)
+*
+*  4.  Large Screen Styles (Media Queries begin here)
+
+
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Sansita");
+
+/* 1. Mobile First Rules */
+
+/* 2. General Rules that apply to all devices  */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  @media;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sansita, sans-serif;
+}
