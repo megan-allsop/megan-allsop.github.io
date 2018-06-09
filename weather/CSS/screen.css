@@ -56,3 +56,9 @@ h5,
 h6 {
   font-family: sansita, sans-serif;
 }
+.tile {
+  background-color: rgba(200, 200, 200, 0.6);
+  margin: 0.2em auto;
+  border: 1px solid;
+  border-radius: 15px;
+}
