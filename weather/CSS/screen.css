@@ -5,6 +5,7 @@
 *  
 *  1.  Includes (fonts and supplementary stylesheets)
 *     1 Normalize
+
 *     2 Google fonts
 *
 *  2.  General Styles (for all pages and devices)
@@ -16,35 +17,31 @@
 
 
 */
+
+/*1.  Includes (fonts and supplementary stylesheets)
+*       1.1 Normalize*/
+
+@import 'normalize.css';
+
+/*      1.2 Google fonts */
+
 @import url("https://fonts.googleapis.com/css?family=Sansita");
 
-/* 1. Mobile First Rules */
+/* 2. General Rules that apply to all devices  */
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
-}
-body {
-  font-family: helvetica, verdana, sans-serif;
-  font-size: 20px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: sansita, Eurostyle, sans-serif;
+    box-sizing: inherit;
 }
 
-/* 2. General Rules that apply to all devices  */
-
 body {
-  font-family: Helvetica, Arial, sans-serif;
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
 }
 
 h1,
@@ -53,11 +50,111 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sansita, sans-serif;
+    font-family: sansita, Eurostyle, sans-serif;
 }
+
+selector {
+    property: value;
+}
+
 .tile {
-  background-color: rgba(200, 200, 200, 0.6);
-  margin: 0.2em auto;
-  border: 1px solid;
-  border-radius: 15px;
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+/*Navigation Bar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/*Make the logo and title brand on one line*/
+
+header {
+    display: flex;
+}
+
+/*Make logo and brand bigger*/
+
+div#logo {
+    font-size: 80px;
+}
+
+#site-brand {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+/**/
+
+#curWeather {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/*Given Size to boxes*/
+
+#temps,
+#wind {
+    width: 28%;
+}
+
+#summary {
+    width: 40%;
+}
+
+/*adding some  padding in the weather boxes*/
+
+#temps,
+#wind,
+#summary {
+    padding: 10px;
+}
+
+@media only screen and (max-width:600px) {
+
+    /* 1. Mobile First Rules */
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    footer {
+        margin-bottom: 2em;
+    }
+
+    #site-brand {
+        font-size: 2em;
+        font-weight: 600;
+    }
 }
