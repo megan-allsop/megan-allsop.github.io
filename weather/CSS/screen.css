@@ -133,6 +133,7 @@ div#logo {
 #wind,
 #summary {
     padding: 10px;
+
 }
 
 @media only screen and (max-width:600px) {
@@ -150,11 +151,24 @@ div#logo {
     }
 
     footer {
-        margin-bottom: 2em;
-    }
+        margin-bottom: 2.5em;
 
+    }
+    #hourly {
+        display: none; 
+    }
     #site-brand {
         font-size: 2em;
         font-weight: 600;
+    }
+    #curWeather {
+        display: flex; 
+        flex-direction: column;
+    }
+    #curWeather > section {
+        width: 50%; 
+    }
+    #temps > h2, #wind > h2 {
+        display: none;
     }
 }
