@@ -96,6 +96,12 @@ header {
     display: flex;
 }
 
+/*Background pictures for mobile summary*/
+
+.clear {
+    background-image: url("..images/weather-images/clear-450.jpg")
+}
+
 /*Make logo and brand bigger*/
 
 div#logo {
@@ -111,9 +117,11 @@ div#logo {
 /**/
 
 #curWeather {
+     background-image: url('../Images/weather-images/clear.jpg');
     display: flex;
     justify-content: space-around;
     text-align: center;
+    background-size: cover; 
 }
 
 /*Given Size to boxes*/
@@ -136,6 +144,18 @@ div#logo {
 
 }
 
+#hourly ul {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+#hourly ul li {
+    min-width: 110px;
+    min-height: 30px;
+    background-color: beige;
+}
+
 @media only screen and (max-width:600px) {
 
     /* 1. Mobile First Rules */
@@ -155,20 +175,35 @@ div#logo {
 
     }
     #hourly {
-        display: none; 
+        display: flex;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    #hourly ul li {
+        min-width: 110px;
     }
     #site-brand {
         font-size: 2em;
         font-weight: 600;
     }
     #curWeather {
-        display: flex; 
+        background-image: url('../Images/weather-images/clear-small.jpg');
+        display: flex;
         flex-direction: column;
     }
     #curWeather > section {
-        width: 50%; 
+        width: 50%;
     }
-    #temps > h2, #wind > h2 {
+    #temps > h2,
+    #wind > h2 {
         display: none;
+    }
+    #curWeather {
+        background-size: cover;
+    }
+
+    /* Background pictures for summary */
+    .clear {
+        background-image: url("/weather/images/clear_small.jpg");
     }
 }

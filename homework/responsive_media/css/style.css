@@ -111,6 +111,10 @@ h1 {
 	height: auto;
 }
 
+.rain {
+    background-image: image('/weather/Images/weather-images/rain-small.jpg');
+}
+
 .image-caption {
 	padding: .25em 1em;
 	font-family: serif;
@@ -123,6 +127,7 @@ h1 {
 	width: 100%;
 	height: auto;
 }
+
 
 
 /*******************************
